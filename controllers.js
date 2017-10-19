@@ -74,12 +74,12 @@ app.controller('resultsCtrl', function($scope) {
 });
 
 app.directive('fly', function flyDirective () {
-return {
-  template: (
-    '<div class="fly-response">' +
-      '<img ng-src="http://www.orvis.com/orvis_assets/prodimg/0338NW.jpg"/>' +
-    '</div>'
-  )
+  return {
+    template: (
+      '<div class="fly-response">' +
+        '<img ng-src="http://www.orvis.com/orvis_assets/prodimg/0338NW.jpg"/>' +
+      '</div>'
+    )
 };
-}
+});
 
