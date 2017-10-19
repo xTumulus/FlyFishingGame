@@ -77,7 +77,7 @@ app.directive('fly', function flyDirective () {
   return {
     template: (
       '<div class="fly-response">' +
-        '<img ng-src=""/>' +
+        '<img ng-src= 'fly.image'/>' +
       '</div>'
     )
 };
