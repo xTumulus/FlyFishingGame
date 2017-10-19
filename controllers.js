@@ -53,12 +53,8 @@ app.controller('resultsCtrl', function($scope) {
     }
 });
 
-app.directive('fly', flyDirective);
-
-function flyDirective () {
+app.directive('fly', function flyDirective () {
 return {
-  restrict: 'E', /* [2] */
-  replace: 'true',
   template: (
     '<div class="fly-response">' +
       '<img ng-src="http://www.orvis.com/orvis_assets/prodimg/0338NW.jpg"/>' +
