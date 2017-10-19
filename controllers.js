@@ -7,11 +7,11 @@ app.config(function($routeProvider) {
     })
     .when("/test", {
         templateUrl : "test.html",
-        controller : "testCtrl.js"
+        controller : "testCtrl"
     })
     .when("/results", {
         templateUrl : "results.html",
-        controller : "resultsCtrl.js"
+        controller : "resultsCtrl"
     })
 });
 
