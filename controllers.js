@@ -24,9 +24,29 @@ app.controller('testCtrl', function($scope) {
     $scope.flyType = '';
     $scope.fishCaught = 0;
 
+    $scope.flyList = [
+      {image: '', name: 'stonefly'},
+      {image: '', name: 'caddis'},
+      {image: '', name: 'mayfly'},
+      {image: '', name: 'ant'},
+      {image: '', name: 'scud'}
+    ];
+
+    $scope.bugList = [
+      {image: '', name: 'stonefly'},
+      {image: '', name: 'caddis'},
+      {image: '', name: 'mayfly'},
+      {image: '', name: 'ant'},
+      {image: '', name: 'scud'}
+    ];
+
     function onChooseFly() {
       if ($scope.bugType === $scope.flyType) {
         $scope.fishCaught += 1;
+        //give some kind of alert
+        resetQuestion();
+      } else {
+        resetQuestion();
       }
     }
 });
