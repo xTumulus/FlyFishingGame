@@ -25,11 +25,11 @@ app.controller('testCtrl', function($scope) {
     $scope.fishCaught = 0;
 
     $scope.flyList = [
-      {image: '', name: 'stonefly'},
-      {image: '', name: 'caddis'},
-      {image: '', name: 'mayfly'},
-      {image: '', name: 'ant'},
-      {image: '', name: 'scud'}
+      {image: 'http://www.orvis.com/orvis_assets/prodimg/7T50SF3golden.jpg', name: 'stonefly'},
+      {image: 'http://www.flyfishinginsidernewsletter.com/flyfishusa/flies/5030.jpg', name: 'caddis'},
+      {image: 'http://www.orvis.com/orvis_assets/prodimg/0338NW.jpg', name: 'mayfly'},
+      {image: 'https://s3-us-west-2.amazonaws.com/fly-index/images/r3v81624-5750-1478928452.jpg', name: 'ant'},
+      {image: 'http://www.orvis.com/orvis_assets/prodimg/0472L2W_lg.jpg', name: 'scud'}
     ];
 
     $scope.bugList = [
@@ -77,7 +77,7 @@ app.directive('fly', function flyDirective () {
   return {
     template: (
       '<div class="fly-response">' +
-        '<img ng-src="http://www.orvis.com/orvis_assets/prodimg/0338NW.jpg"/>' +
+        '<img ng-src=""/>' +
       '</div>'
     )
 };
