@@ -1,19 +1,17 @@
 <!Doctype HTML>
 <html>
   <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
   <script type="text/javascript" src="scripts.js"> </script>
+  <script type="text/javascript" src="mainCtrl.js"> </script>  
   <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
     <div ng-app="FishingGame" ng-controller="mainCtrl">
-    <p><a href="#/!">Main</a></p>
-
-      <a href="#!red">Red</a>
-      <a href="#!green">Green</a>
-      <a href="#!blue">Blue</a>
 
       <ng-view></ng-view>
+
     </div>
   </body>
 </html>
