@@ -19,7 +19,7 @@ app.controller('mainCtrl', function($scope) {
 
 });
 
-app.controller('testCtrl', function($scope) {
+app.controller('testCtrl', function($scope, $location) {
     $scope.bugImage = '';
     $scope.bugType = '';
     $scope.flyType = '';
@@ -67,7 +67,7 @@ app.controller('testCtrl', function($scope) {
     $scope.resetQuestion = function() {
       $scope.castCounter += 1;
       if($scope.castCounter === 10) {
-        //route to results
+        $location.path( "/results" );
       } else {
         $scope.getRandomBug();
       }
