@@ -65,7 +65,7 @@ app.controller('testCtrl', function($scope) {
       if($scope.castCounter === 10) {
         //route to results
       } else {
-        getRandomBug();
+        $scope.getRandomBug();
       }
     }
 });
