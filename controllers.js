@@ -70,7 +70,7 @@ app.controller('testCtrl', function($scope, $location, catchCounter) {
     $scope.onChooseFly = function(flyType) {
       console.log("running onChooseFly");
       if ($scope.bugType === flyType) {
-        fishCounter.caughtAFishy();
+        catchCounter.caughtAFishy();
         $scope.resetQuestion();
       } else {
         $scope.resetQuestion();
@@ -87,9 +87,9 @@ app.controller('testCtrl', function($scope, $location, catchCounter) {
     }
 });
 
-app.controller('resultsCtrl', function($scope, fishCounter) {
-    console.log(fishCounter.getfishCaught())
-    $scope.numFish = fishCounter.getfishCaught();
+app.controller('resultsCtrl', function($scope, catchCounter) {
+    console.log(catchCounter.getfishCaught())
+    $scope.numFish = catchCounter.getfishCaught();
     if($scope.numFish === 10) {
       $scope.skillLevel = 'MASTER';
       $scope.message = 'Fish tremble when you enter the river. It is so easy for you to fool them that they basically jump into your net before realising they have been had.'
