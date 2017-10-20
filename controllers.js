@@ -50,7 +50,7 @@ app.controller('testCtrl', function($scope) {
       $scope.bugType = $scope.buglist[bugNum].name;
     }
 
-    function onChooseFly() {
+    function onChooseFly(flyType) {
       console.log("running onChooseFly");
       if ($scope.bugType === flyType) {
         $scope.fishCaught += 1;
