@@ -44,13 +44,15 @@ app.controller('testCtrl', function($scope) {
 
     function getRandomBug() {
       var bugNum = Math.floor(Math.random() * 4);
+      console.log(bugNum);
       $scope.bugimage = $scope.bugList[bugNum].image;
+      console.log($scope.bugImage);
       $scope.bugType = $scope.buglist[bugNum].name;
     }
 
     function onChooseFly() {
       console.log("running onChooseFly");
-      if ($scope.bugType === $scope.flyType) {
+      if ($scope.bugType === flyType) {
         $scope.fishCaught += 1;
         resetQuestion();
       } else {
