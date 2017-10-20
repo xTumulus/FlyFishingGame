@@ -1,5 +1,6 @@
 body {
     /*We could have the background change by page*/
+    color: white;
     background: url('river3.jpg') no-repeat center center fixed;
     background-size: cover;
 }
@@ -15,7 +16,6 @@ body {
 }
 
 .home-container {
-    color: white;
     margin-left: auto;
     margin-right: auto;
     width: 500px;
@@ -36,7 +36,7 @@ body {
     border: 3px solid white;
     border-radius: 5px;
     height: 30px;
-    width: 105px;
+    width: 100%;
 }
 
 .test-image {
