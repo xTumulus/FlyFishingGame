@@ -1,4 +1,4 @@
 body {
-    background: url(flyrod.jpg) no-repeat center center fixed;
+    background: url('assets/flyrod.jpg') no-repeat center center fixed;
     background-size: cover;
 }
