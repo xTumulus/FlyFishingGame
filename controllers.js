@@ -35,11 +35,11 @@ app.controller('testCtrl', function($scope) {
     ];
 
     $scope.bugList = [
-      {image: '', name: 'stonefly'},
-      {image: '', name: 'caddis'},
-      {image: '', name: 'mayfly'},
-      {image: '', name: 'ant'},
-      {image: '', name: 'scud'}
+      {image: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/SteinfliegenLarve2.JPG', name: 'stonefly'},
+      {image: 'https://farm6.static.flickr.com/5542/30354436550_6dbbbfe95a_b.jpg', name: 'caddis'},
+      {image: 'http://lh4.ggpht.com/_tLjlL5zsmAc/SxN-gUgLTtI/AAAAAAAABJM/QWSyu8encWU/Ephemeroptera%2001%20Side%2003.jpg', name: 'mayfly'},
+      {image: 'https://c1.staticflickr.com/1/220/521327318_111d44bb8b_b.jpg', name: 'ant'},
+      {image: 'https://www.headhuntersflyshop.com/wp-content/uploads/2016/07/bugs_7_8_16-18.jpg', name: 'scud'}
     ];
 
     function getRandomBug() {

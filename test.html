@@ -1,7 +1,10 @@
-<div class="test-container" ng-controller='testCtrl'>
+<div class="test-container" ng-controller='testCtrl' onload="getRandomBug()">
   <h1>Test your knowledge</h1>
   <div class="fish-caught">
     Fish Caught: {{fishCaught}}
+  </div>
+  <div class="bug-image">
+    <img src="{{bugImage}}" alt="a bug">
   </div>
   <div class="fly-container row">
     <fly class="fly-image" ng-repeat='fly in flyList'></fly>
