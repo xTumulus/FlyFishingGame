@@ -114,7 +114,7 @@ app.controller('resultsCtrl', function($scope, catchCounter) {
       $scope.message = 'Maybe you should try another hobby.'
     }
 
-    resetGame() {
+    function resetGame() {
       catchCounter.reset();
     }
 });
