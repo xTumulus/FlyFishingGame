@@ -24,7 +24,7 @@ app.service('catchCounter', function () {
             },
             caughtAFishy: function() {
                 fishCaught += 1;
-            }
+            },
             reset: function() {
                 fishCaught = 0;
             }
