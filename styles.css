@@ -21,6 +21,11 @@ body {
     width: 500px;
 }
 
+.test-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .page-logo {
   height: 200px;
 }
