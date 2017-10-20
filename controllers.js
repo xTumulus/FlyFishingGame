@@ -116,6 +116,7 @@ app.controller('resultsCtrl', function($scope, catchCounter) {
     }
 
     function resetGame() {
+      console.log('running resetGame')
       catchCounter.reset();
     }
 });
