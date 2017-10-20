@@ -59,6 +59,12 @@ p {
   text-align: center;
 }
 
+.results-container{
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px;
+}
+
 .title {
   margin-left: 62px;
 }
@@ -101,3 +107,4 @@ p {
   border-radius: 3px;
   border: 2px black solid;
 }
+
