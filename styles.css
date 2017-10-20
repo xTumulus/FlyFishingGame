@@ -33,6 +33,7 @@ p {
   display: flex;
   flex-direction: row;
 }
+
 .fishing-game{
   height: 100%;
 }
@@ -51,10 +52,16 @@ p {
   height: 100%;
 }
 
+.title {
+  margin-left: 62px;
+}
+
 .page-logo {
   height: 300px;
   width: 200px;
 }
+
+
 
 .title-text {
   display: flex;
