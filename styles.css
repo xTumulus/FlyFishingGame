@@ -3,3 +3,22 @@ body {
     background: url('https://upload.wikimedia.org/wikipedia/commons/b/b4/Fly_fishing_Sturgeon_River%2C_Upper_Michigan.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container {
+    justify-content: center;
+}
+
+.button-link {
+    background-color: transparent;
+    color: green;
+    border: 3px solid green;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+    width: 105px;
+}
