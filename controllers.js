@@ -98,7 +98,7 @@ app.directive('fly', function flyDirective () {
   return {
     template: (
       '<div class="fly-response row">' +
-        '<img class="test-image" ng-src= "{{fly.image}}"/>' +
+        '<img class="test-image" ng-click="onChooseFly(fly.name)" ng-src= "{{fly.image}}"/>' +
       '</div>'
     )
 };
