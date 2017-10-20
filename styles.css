@@ -9,6 +9,11 @@ body {
     flex-direction: column;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
 .home-container {
     color: white;
     margin-left: auto;
@@ -22,4 +27,9 @@ body {
     border-radius: 5px;
     height: 30px;
     width: 105px;
+}
+
+.test-image {
+  height: 100px;
+  width: 100px;
 }
