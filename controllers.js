@@ -26,6 +26,7 @@ app.service('catchCounter', function () {
                 fishCaught += 1;
             },
             reset: function() {
+                console.log('running reset on catchCounter');
                 fishCaught = 0;
             }
         };
