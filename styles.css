@@ -13,6 +13,10 @@ body {
     font-family: 'Caveat', cursive;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.5em;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -43,6 +47,7 @@ body {
 
 .button-link {
     background-color: transparent;
+    color: white;
     border: 3px solid white;
     border-radius: 5px;
     height: 30px;
