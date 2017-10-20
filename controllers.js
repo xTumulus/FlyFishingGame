@@ -94,16 +94,16 @@ app.controller('resultsCtrl', function($scope, catchCounter) {
     if($scope.numFish === 10) {
       $scope.skillLevel = 'MASTER';
       $scope.message = 'Fish tremble when you enter the river. It is so easy for you to fool them that they basically jump into your net before realising they have been had.'
-    } else if ($scope.fishCaught < 10 && $scope.fishCaught >= 8){
+    } else if ($scope.numFish < 10 && $scope.fishCaught >= 8){
       $scope.skillLevel = 'amazing';
       $scope.message = 'Get on the river and keep that rod tip bent!'
-    } else if ($scope.fishCaught < 8  && $scope.fishCaught >= 5){
+    } else if ($scope.numFish < 8  && $scope.fishCaught >= 5){
       $scope.skillLevel = 'good';
       $scope.message = 'Get out and keep it up, you will get even better!'
-    } else if ($scope.fishCaught < 5 && $scope.fishCaught >= 3){
+    } else if ($scope.numFish < 5 && $scope.fishCaught >= 3){
       $scope.skillLevel = 'decent';
       $scope.message = 'You are getting it, keep trying!'
-    } else if ($scope.fishCaught < 3 && $scope.fishCaught >= 1){
+    } else if ($scope.numFish < 3 && $scope.fishCaught >= 1){
       $scope.skillLevel = 'beginner';
       $scope.message = 'Practice makes perfect. You have a ways to go!'
     } else {
