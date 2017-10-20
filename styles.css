@@ -21,6 +21,12 @@ body {
     width: 500px;
 }
 
+.test-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .page-logo {
   height: 200px;
 }
