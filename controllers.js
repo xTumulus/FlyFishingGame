@@ -20,7 +20,6 @@ app.controller('mainCtrl', function($scope) {
 });
 
 app.controller('testCtrl', function($scope) {
-    $scope.bugImage = '';
     $scope.bugType = '';
     $scope.flyType = '';
     $scope.fishCaught = 0;
@@ -46,8 +45,8 @@ app.controller('testCtrl', function($scope) {
       console.log('running getRandomBug')
       var bugNum = Math.floor(Math.random() * 4);
       console.log(bugNum);
-      $scope.bugimage = $scope.bugList[bugNum].image;
-      console.log($scope.bugImage);
+      var bugImage = document.getElementbyID('bug-image');
+      bugImage.src = $scope.bugList[bugNum].image;
       $scope.bugType = $scope.buglist[bugNum].name;
     }
 
