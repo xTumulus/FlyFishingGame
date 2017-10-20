@@ -20,6 +20,7 @@ app.controller('mainCtrl', function($scope) {
 });
 
 app.controller('testCtrl', function($scope) {
+    $scope.bugImage = '';
     $scope.bugType = '';
     $scope.flyType = '';
     $scope.fishCaught = 0;
@@ -41,10 +42,15 @@ app.controller('testCtrl', function($scope) {
       {image: '', name: 'scud'}
     ];
 
+    function getRandomBug() {
+      var bugNum = Math.floor(Math.random() * 4);
+      $scope.bugimage = $scope.bugList[bugNum].image;
+      $scope.bugType = $scope.buglist[bugNum].name;
+    }
+
     function onChooseFly() {
       if ($scope.bugType === $scope.flyType) {
         $scope.fishCaught += 1;
-        //give some kind of alert
         resetQuestion();
       } else {
         resetQuestion();
@@ -56,7 +62,7 @@ app.controller('testCtrl', function($scope) {
       if($scope.castCounter === 10) {
         //route to results
       } else {
-        //generate another random bug
+        getRandomBug();
       }
     }
 });
