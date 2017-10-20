@@ -20,6 +20,7 @@ app.controller('mainCtrl', function($scope) {
 });
 
 app.controller('testCtrl', function($scope) {
+    $scope.bugImage = '';
     $scope.bugType = '';
     $scope.flyType = '';
     $scope.fishCaught = 0;
@@ -49,7 +50,7 @@ app.controller('testCtrl', function($scope) {
       console.log($scope.bugList[bugNum].image);
       console.log($scope.bugList[bugNum].name);
       var bugImage = angular.element( document.querySelector('#bug-image'));
-      bugImage.src = $scope.bugList[bugNum].image;
+      $scope.bugImage = $scope.bugList[bugNum].image;
       $scope.bugType = $scope.buglist[bugNum].name;
     }
 
