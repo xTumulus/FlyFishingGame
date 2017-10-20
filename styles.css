@@ -1,4 +1,5 @@
 body {
+    /*We could have the background change by page*/
     background: url('https://upload.wikimedia.org/wikipedia/commons/b/b4/Fly_fishing_Sturgeon_River%2C_Upper_Michigan.jpg') no-repeat center center fixed;
     background-size: cover;
 }
