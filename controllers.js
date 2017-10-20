@@ -32,8 +32,11 @@ app.service('catchCounter', function () {
         };
 });
 
-app.controller('mainCtrl', function($scope) {
-
+app.controller('mainCtrl', function($scope, catchCounter) {
+  function resetGame() {
+    console.log('running resetGame')
+    catchCounter.reset();
+  }
 });
 
 app.controller('testCtrl', function($scope, $location, catchCounter) {
@@ -113,11 +116,6 @@ app.controller('resultsCtrl', function($scope, catchCounter) {
     } else {
       $scope.skillLevel = 'horrible';
       $scope.message = 'Maybe you should try another hobby.'
-    }
-
-    function resetGame() {
-      console.log('running resetGame')
-      catchCounter.reset();
     }
 });
 
