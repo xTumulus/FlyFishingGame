@@ -1,13 +1,21 @@
 <div class="test-container" ng-controller='testCtrl' ng-init="getRandomBug()">
-  <h1>Test your knowledge</h1>
-  <div class="fish-caught">
-    Fish Caught: {{fishCaught}}
-  </div>
+  <h1>Try to "Match the Hatch"</h1>
+  <p>
+    As you are fishing you routinely examine the water to see what kinds of bugs the trout are feeding on.
+    Any good fisherman knows that you'll catch a lot more fish if you can match your flies to the bugs in the water.
+    <br>
+    A random bug image will appear below. Try to click the fly that best matches the bug.
+    If you do you'll start catching fish! You have ten good holes to try on the river.
+  </p>
 
   <img class="bug-image" ng-src="{{bugImage}}" alt="a bug">
 
   <div class="fly-container row">
     <fly class="fly-image" ng-repeat='fly in flyList'></fly>
+  </div>
+
+  <div class="fish-caught">
+    Fish Caught: {{fishCaught}}
   </div>
 </div>
 

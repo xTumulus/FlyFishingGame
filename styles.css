@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 
 .column {
@@ -56,11 +56,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button-link {
+    font-size: 1.8em;
     background-color: transparent;
     color: white;
     border: 3px solid white;
     border-radius: 5px;
-    height: 30px;
     width: 100%;
 }
 
