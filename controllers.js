@@ -89,8 +89,8 @@ app.controller('testCtrl', function($scope, $location, catchCounter) {
 });
 
 app.controller('resultsCtrl', function($scope, catchCounter) {
-    console.log(catchCounter.getfishCaught())
-    $scope.numFish = catchCounter.getfishCaught();
+    console.log(catchCounter.getFishCaught())
+    $scope.numFish = catchCounter.getFishCaught();
     if($scope.numFish === 10) {
       $scope.skillLevel = 'MASTER';
       $scope.message = 'Fish tremble when you enter the river. It is so easy for you to fool them that they basically jump into your net before realising they have been had.'
