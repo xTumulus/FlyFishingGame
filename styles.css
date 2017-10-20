@@ -31,7 +31,7 @@ body {
 .test-container {
   display: flex;
   flex-direction: column;
-  align-items: : center;
+  align-items: center;
 }
 
 .page-logo {
