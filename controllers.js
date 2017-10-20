@@ -45,6 +45,9 @@ app.controller('testCtrl', function($scope) {
       console.log('running getRandomBug')
       var bugNum = Math.floor(Math.random() * 4);
       console.log(bugNum);
+      console.log($scope.bugList[bugNum]);
+      console.log($scope.bugList[bugNum].image);
+      console.log($scope.bugList[bugNum].name);
       var bugImage = angular.element( document.querySelector('#bug-image'));
       bugImage.src = $scope.bugList[bugNum].image;
       $scope.bugType = $scope.buglist[bugNum].name;
