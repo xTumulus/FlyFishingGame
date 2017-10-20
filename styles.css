@@ -22,7 +22,7 @@ body {
 }
 
 .test-container {
-  widows: 500px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
