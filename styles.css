@@ -11,6 +11,7 @@ body {
     background: url('river3.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Caveat', cursive;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
