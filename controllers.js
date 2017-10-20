@@ -52,6 +52,7 @@ app.controller('testCtrl', function($scope) {
       var bugImage = angular.element( document.querySelector('#bug-image'));
       $scope.bugImage = $scope.bugList[bugNum].image;
       $scope.bugType = $scope.buglist[bugNum].name;
+      console.log($scope.bugType);
     }
 
     $scope.onChooseFly = function(flyType) {
