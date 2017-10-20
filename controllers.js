@@ -49,6 +49,7 @@ app.controller('testCtrl', function($scope) {
     }
 
     function onChooseFly() {
+      console.log("running onChooseFly");
       if ($scope.bugType === $scope.flyType) {
         $scope.fishCaught += 1;
         resetQuestion();
