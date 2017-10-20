@@ -91,8 +91,8 @@ app.controller('resultsCtrl', function($scope) {
 app.directive('fly', function flyDirective () {
   return {
     template: (
-      '<div class="test-image fly-response row">' +
-        '<img ng-src= "{{fly.image}}"/>' +
+      '<div class="fly-response row">' +
+        '<img class="test-image" ng-src= "{{fly.image}}"/>' +
       '</div>'
     )
 };
