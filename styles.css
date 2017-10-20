@@ -37,4 +37,6 @@ body {
   height: 100px;
   width: 100px;
   margin: 25px;
+  border-radius: 50%;
+  border: 2px black solid;
 }
