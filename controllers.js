@@ -37,8 +37,6 @@ app.controller('mainCtrl', function($scope, catchCounter) {
     console.log('running resetGame')
     catchCounter.reset();
   }
-
-  resetGame();
 });
 
 app.controller('testCtrl', function($scope, $location, catchCounter) {
