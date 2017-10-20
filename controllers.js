@@ -41,7 +41,7 @@ app.controller('testCtrl', function($scope) {
       {image: 'https://www.headhuntersflyshop.com/wp-content/uploads/2016/07/bugs_7_8_16-18.jpg', name: 'scud'}
     ];
 
-    function getRandomBug() {
+    $scope.getRandomBug = function() {
       console.log('running getRandomBug')
       var bugNum = Math.floor(Math.random() * 4);
       console.log(bugNum);
@@ -50,7 +50,7 @@ app.controller('testCtrl', function($scope) {
       $scope.bugType = $scope.buglist[bugNum].name;
     }
 
-    function onChooseFly(flyType) {
+    $scope.onChooseFly = function(flyType) {
       console.log("running onChooseFly");
       if ($scope.bugType === flyType) {
         $scope.fishCaught += 1;
@@ -60,7 +60,7 @@ app.controller('testCtrl', function($scope) {
       }
     }
 
-    function resetQuestion() {
+    $scope.resetQuestion = function() {
       $scope.castCounter += 1;
       if($scope.castCounter === 10) {
         //route to results
