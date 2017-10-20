@@ -44,7 +44,7 @@ app.controller('testCtrl', function($scope) {
 
     $scope.getRandomBug = function() {
       console.log('running getRandomBug')
-      var bugNum = Math.floor(Math.random() * 4);
+      var bugNum = Math.floor(Math.random() * 5);
       console.log(bugNum);
       console.log($scope.bugList[bugNum]);
       console.log($scope.bugList[bugNum].image);

@@ -54,3 +54,11 @@ body {
   border-radius: 50%;
   border: 2px black solid;
 }
+
+.bug-image {
+  height: 100px;
+  width: 200px;
+  margin: 25px;
+  border-radius: 3px;
+  border: 2px black solid;
+}
