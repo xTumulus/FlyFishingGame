@@ -43,6 +43,7 @@ app.controller('testCtrl', function($scope) {
     ];
 
     function getRandomBug() {
+      console.log('running getRandomBug')
       var bugNum = Math.floor(Math.random() * 4);
       console.log(bugNum);
       $scope.bugimage = $scope.bugList[bugNum].image;
