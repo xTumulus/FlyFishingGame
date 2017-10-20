@@ -42,6 +42,9 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 600px;
 }
 
 .test-container {
