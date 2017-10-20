@@ -10,15 +10,16 @@ body {
 }
 
 .home-container {
-    justify-content: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button-link {
     background-color: transparent;
-    color: green;
-    border: 3px solid green;
+    color: white;
+    border: 3px solid white;
     border-radius: 5px;
-    font-weight: bold;
     height: 30px;
     width: 105px;
 }

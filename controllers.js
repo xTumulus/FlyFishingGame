@@ -23,6 +23,7 @@ app.controller('testCtrl', function($scope) {
     $scope.bugType = '';
     $scope.flyType = '';
     $scope.fishCaught = 0;
+    $scope.castCounter = 0;
 
     $scope.flyList = [
       {image: 'http://www.orvis.com/orvis_assets/prodimg/7T50SF3golden.jpg', name: 'stonefly'},
@@ -49,6 +50,15 @@ app.controller('testCtrl', function($scope) {
         resetQuestion();
       }
     }
+
+    function resetQuestion() {
+      $scope.castCounter += 1;
+      if($scope.castCounter === 10) {
+        //route to results
+      } else {
+        //generate another random bug
+      }
+    }
 });
 
 app.controller('resultsCtrl', function($scope) {
@@ -70,6 +80,11 @@ app.controller('resultsCtrl', function($scope) {
     } else {
       $scope.skillLevel = 'horrible';
       $scope.message = 'Maybe you should try another hobby.'
+    }
+    resetGame();
+
+    function resetGame() {
+      $scope.castCounter = 0;
     }
 });
 

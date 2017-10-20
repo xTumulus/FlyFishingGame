@@ -1,11 +1,9 @@
 <div class="test-container" ng-controller='testCtrl'>
   <h1>Test your knowledge</h1>
-  <div class="test-image-div">
-    <img id="test-fish" src="http://www.orvis.com/orvis_assets/prodimg/0338NW.jpg">
-    <img id="test-fly" src="http://www.orvis.com/orvis_assets/prodimg/0338NW.jpg">
-  </div>
-  <div class="response-image-div" ng-repeat='fly in flyList'>
-    <fly></fly>
+  <div class="fly-container">
+    <div class="fly-image" ng-repeat='fly in flyList'>
+      <fly></fly>
+    </div>
   </div>
 </div>
 
