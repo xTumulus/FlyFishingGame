@@ -15,11 +15,24 @@ app.config(function($routeProvider) {
     })
 });
 
+app.service('catchCounter', function () {
+        var fishCaught = 0;
+
+        return {
+            getFishCaught: function () {
+                return fishCaught;
+            },
+            caughtAFishy: function() {
+                fishCaught += 1;
+            }
+        };
+});
+
 app.controller('mainCtrl', function($scope) {
 
 });
 
-app.controller('testCtrl', function($scope, $location) {
+app.controller('testCtrl', function($scope, $location, catchCounter) {
     $scope.bugImage = '';
     $scope.bugType = '';
     $scope.flyType = '';
@@ -57,7 +70,7 @@ app.controller('testCtrl', function($scope, $location) {
     $scope.onChooseFly = function(flyType) {
       console.log("running onChooseFly");
       if ($scope.bugType === flyType) {
-        $scope.fishCaught += 1;
+        fishCounter.caughtAFishy();
         $scope.resetQuestion();
       } else {
         $scope.resetQuestion();
@@ -74,7 +87,9 @@ app.controller('testCtrl', function($scope, $location) {
     }
 });
 
-app.controller('resultsCtrl', function($scope) {
+app.controller('resultsCtrl', function($scope, fishCounter) {
+    console.log(fishCounter.getfishCaught())
+    $scope.numFish = fishCounter.getfishCaught();
     if($scope.numFish === 10) {
       $scope.skillLevel = 'MASTER';
       $scope.message = 'Fish tremble when you enter the river. It is so easy for you to fool them that they basically jump into your net before realising they have been had.'
@@ -93,11 +108,6 @@ app.controller('resultsCtrl', function($scope) {
     } else {
       $scope.skillLevel = 'horrible';
       $scope.message = 'Maybe you should try another hobby.'
-    }
-    resetGame();
-
-    function resetGame() {
-      $scope.castCounter = 0;
     }
 });
 
