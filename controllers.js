@@ -49,9 +49,8 @@ app.controller('testCtrl', function($scope) {
       console.log($scope.bugList[bugNum]);
       console.log($scope.bugList[bugNum].image);
       console.log($scope.bugList[bugNum].name);
-      var bugImage = angular.element( document.querySelector('#bug-image'));
       $scope.bugImage = $scope.bugList[bugNum].image;
-      $scope.bugType = $scope.buglist[bugNum].name;
+      $scope.bugType = $scope.bugList[bugNum].name;
       console.log($scope.bugType);
     }
 
