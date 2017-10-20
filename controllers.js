@@ -33,7 +33,7 @@ app.service('catchCounter', function () {
 });
 
 app.controller('mainCtrl', function($scope, catchCounter) {
-  function resetGame() {
+  $scope.resetGame = function() {
     console.log('running resetGame')
     catchCounter.reset();
   }
