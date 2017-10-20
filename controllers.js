@@ -25,6 +25,9 @@ app.service('catchCounter', function () {
             caughtAFishy: function() {
                 fishCaught += 1;
             }
+            reset: function() {
+                fishCaught = 0;
+            }
         };
 });
 
@@ -109,6 +112,10 @@ app.controller('resultsCtrl', function($scope, catchCounter) {
     } else {
       $scope.skillLevel = 'horrible';
       $scope.message = 'Maybe you should try another hobby.'
+    }
+
+    resetGame() {
+      catchCounter.reset();
     }
 });
 
